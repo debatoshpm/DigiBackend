@@ -43,8 +43,7 @@ router.post("/addRec", async (req, res) => {
 router.post("/addJob", async (req, res) => {
   const data = new JobData({
     name: req.body.name,
-    username: req.body.userrname,
-    password: req.body.password,
+    desciption: req.body.desciption,
   });
 
   try {
